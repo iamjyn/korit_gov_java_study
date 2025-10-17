@@ -39,7 +39,7 @@ public class If02 {
         // x와 y를 입력 받으세요
         // 입력했을 때 몇 사분면에 존재하는지 출력하시오
 
-        System.out.println("=======================");
+        System.out.println("=".repeat(30));
 
         Scanner scanner = new Scanner(System.in);
 

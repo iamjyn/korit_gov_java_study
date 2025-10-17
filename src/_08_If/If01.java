@@ -33,7 +33,7 @@ public class If01 {
             System.out.println("탑승 불가능");
         }
 
-        System.out.println("====================");
+        System.out.println("=".repeat(30));
 
         // 1. 3의 배수인지 판단
         int num = 12;
@@ -63,7 +63,7 @@ public class If01 {
             System.out.println(num4);
         }
 
-        System.out.println("====================");
+        System.out.println("=".repeat(30));
 
         // 4. 아이디 비밀번호 확인
         String userId = "myid1234";

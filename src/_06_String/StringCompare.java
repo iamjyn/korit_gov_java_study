@@ -11,7 +11,7 @@ public class StringCompare {
         System.out.println(str1.equals("Java"));
         System.out.println(str1.equalsIgnoreCase("java")); // 대소문자 구분없이 같냐?
 
-        System.out.println("===============");
+        System.out.println("=".repeat(30));
         str1 = "1234";
         str2 = "1234";
         System.out.println(str1 == str2);

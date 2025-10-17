@@ -22,7 +22,7 @@ public class Operator {
         num1 += 10;
         // num1 = num1 = 10;
 
-        System.out.println("===========================");
+        System.out.println("=".repeat(30));
 
         // 증감 연산자
         int j = 10;
@@ -49,7 +49,7 @@ public class Operator {
         // < 오른쪽이 더 크거나 같다
         System.out.println(num1 <= num2);
 
-        System.out.println("===========================");
+        System.out.println("=".repeat(30));
 
         // 논리 연산자(&, |, !)
         boolean flag1 = true;
@@ -63,7 +63,7 @@ public class Operator {
         System.out.println(!flag1); // ! not 부정 => 해당 조건을 반대로
         System.out.println(!flag2);
 
-        System.out.println("===========================");
+        System.out.println("=".repeat(30));
 
         // 논리 연산자 조합 (&&, ||)
         // && => 선조건이 ture일 때만 후조건을 실행하며
@@ -76,7 +76,7 @@ public class Operator {
         System.out.println(b > a && a > 5);
         System.out.println(b < a || b > 10);
 
-        System.out.println("===========================");
+        System.out.println("=".repeat(30));
 
         // 삼항 연산자
         int x = 5;
@@ -94,7 +94,7 @@ public class Operator {
         String smae = (x != y) ? "다름" : "같음";
         System.out.println(smae);
 
-        System.out.println("===========================");
+        System.out.println("=".repeat(30));
 
         /* height 라는 int 변수 선언
         * 키가 120 이상인 경우 탑승 가능하도록 하는 삼항연산자
