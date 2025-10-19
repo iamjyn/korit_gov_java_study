@@ -80,22 +80,52 @@ public class While {
 //        }
 
         // 문제1) 1부터 100까지 누적합
-        int num = 1;
-        int sum = 0;
-        while (num < 100) {
-            sum += num;
-        }
-            System.out.println(sum);
+//        int num = 1;
+//        int sum = 0;
+//        while (num <= 100) {
+//            sum += num;
+//            num++;
+//        }
+//            System.out.println(sum);
 
         // 문제2) 1번부터 100까지 식당 웨이팅
         // 이때 1번부터 차례대로 입장 => **번 손님 입장! 출력
         // 10번 손님이 입장할 때 한정메뉴가 솔드 아웃
         // 솔드 아웃 되었기 때문에 가게 문닫음 => 영업종료 출력
+//        int guest = 1;
+//        while (guest <= 100) {
+//            System.out.println(guest + "번 손님 입장!");
+//            if (guest == 10) {
+//                System.out.println("영업종료");
+//                break;
+//            }
+//            guest++;
+//        }
 
         // 문제3) 1번부터 50번까지 웨이팅
         // 메뉴가 20개까지만 한정판매 => 솔드아웃 영업종료 출력
         // 이때 14번이 노쇼 => *번 노쇼 발생! 출력
         // 이것을 while문으로
+        int guest = 1;
+        int noShow = 14;
+        int max = 20;
+        int sold = 0;
+
+        while (guest <= 50) {
+            System.out.println(guest + "번 손님 입장!");
+
+            if (guest == noShow) {
+                System.out.println(noShow + "번 노쇼 발생!");
+            } else {
+                sold++;
+            }
+
+            if (sold == max) {
+                System.out.println("영업종료");
+                break;
+            }
+            guest++;
+        }
 
     }
 }
