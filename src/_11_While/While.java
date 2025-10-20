@@ -37,10 +37,8 @@ public class While {
 //            i++;
 //        }
 
-//        System.out.println("=".repeat(30));
-//
 //        boolean flag = true;
-//        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // 점수를 입력한다 (0~100)
 //        while (flag) {
 //            System.out.print("점수를 입력하세요: ");
@@ -86,21 +84,33 @@ public class While {
 //            sum += num;
 //            num++;
 //        }
-//            System.out.println(sum);
+//        System.out.println("합계: " + sum);
 
         // 문제2) 1번부터 100까지 식당 웨이팅
         // 이때 1번부터 차례대로 입장 => **번 손님 입장! 출력
         // 10번 손님이 입장할 때 한정메뉴가 솔드 아웃
         // 솔드 아웃 되었기 때문에 가게 문닫음 => 영업종료 출력
 //        int guest = 1;
+//        int max = 10;
 //        while (guest <= 100) {
 //            System.out.println(guest + "번 손님 입장!");
-//            if (guest == 10) {
-//                System.out.println("영업종료");
+//            if (guest == max) {
+//                System.out.println("솔드 아웃!");
 //                break;
 //            }
 //            guest++;
 //        }
+//        System.out.println("영업종료");
+
+        // 문제2) for문으로
+//        for (int i = 1; i <= 100; i++) {
+//            System.out.println(i + "번 손님 입장!");
+//            if (i == max) {
+//                System.out.println("솔드 아웃!");
+//                break;
+//            }
+//        }
+//        System.out.println("영업종료");
 
         // 문제3) 1번부터 50번까지 웨이팅
         // 메뉴가 20개까지만 한정판매 => 솔드아웃 영업종료 출력
@@ -111,21 +121,38 @@ public class While {
         int max = 20;
         int sold = 0;
 
-        while (guest <= 50) {
-            System.out.println(guest + "번 손님 입장!");
+//        while (guest <= 50) {
+//            System.out.println(guest + "번 손님 입장!");
+//
+//            if (guest == noShow) {
+//                System.out.println(guest + "번 노쇼 발생!");
+//            } else {
+//                sold++;
+//            }
+//
+//            if (sold == max) {
+//                System.out.println("솔드아웃!");
+//                break;
+//            }
+//            guest++;
+//        }
+//        System.out.println("영업종료");
 
-            if (guest == noShow) {
+        // 문제3) for문으로
+        for (int i = 1; i <= 50; i++) {
+            System.out.println(i + "번 손님 입장!");
+
+            if (i == noShow) {
                 System.out.println(noShow + "번 노쇼 발생!");
             } else {
                 sold++;
             }
-
             if (sold == max) {
-                System.out.println("영업종료");
+                System.out.println("솔드아웃!");
                 break;
             }
-            guest++;
         }
+        System.out.println("영업종료");
 
     }
 }

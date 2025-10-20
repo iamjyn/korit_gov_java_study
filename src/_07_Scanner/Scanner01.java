@@ -22,8 +22,8 @@ public class Scanner01 {
 //        System.out.println("str3: " + str3);
 
         // int 정수 입력받기
-        // nextInt() => 개형문자를 무시하고 입력받는다
-        // 엔터를 치면 엔터전까지 입력받고, 엔터의 개행문자는 남게 됨
+        // nextInt() => 개행문자를 무시하고 입력받는다
+        // 엔터를 치면 엔터 전까지 입력받고, 엔터의 개행문자는 남게 됨
 //        System.out.print("숫자를 입력하시오: ");
 //        int num1 = scanner.nextInt();
 //        System.out.println("num1: " + num1);

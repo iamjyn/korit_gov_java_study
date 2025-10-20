@@ -27,9 +27,5 @@ public class EscapeSequence {
         System.out.println(id.substring(0, 8));
         System.out.println(id.substring(0, id.indexOf("-") + 2));
 
-
-
-
-
     }
 }

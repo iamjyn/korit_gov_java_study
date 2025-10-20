@@ -6,10 +6,10 @@ public class For {
     public static void main(String[] args) {
         // 반복문 - for
         /*
-        * for (선언부; 조건부; 증감부) {
-        *   반복될 코드
-        * }
-        * */
+         * for (선언부; 조건부; 증감부) {
+         *   반복될 코드
+         * }
+         * */
 
 //        for (int i = 0; i < 10; i++) {
 //            System.out.println(i);
@@ -141,7 +141,7 @@ public class For {
         // 정수 5개를 입력받고 입력받은 수 중 가장 큰 값 출력
         // 1~100 사이 / 아니라면 "범위를 벗어났습니다" 출력 후 스탑
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
 //        System.out.print("숫자 5개를 입력하세요(1~100): 1 > ");
 //        int num1 = scanner.nextInt();
@@ -175,16 +175,7 @@ public class For {
 //            return;
 //        }
 //
-//        System.out.print("숫자 5개를 입력하세요(1~100): 5 > ");
-//        int num5 = scanner.nextInt();
-//        scanner.nextLine();
-//        if (num5 > 100 && num5 < 0) {
-//            System.out.println("범위를 벗어났습니다");
-//            return;
-//        }
-
-//        System.out.println("숫자 5개를 입력하세요(1~100): >");
-//
+//        System.out.print("숫자 5개를 입력하세요(1~100): > ");
 //        int maxNum = 0;
 //        for (int i = 1; i <= 5; i++) {
 //            int inputNum = scanner.nextInt();
@@ -202,52 +193,93 @@ public class For {
         // 숫자를 입력받아 팩토리얼 구하기
         // 단 1~10까지만 입력받기
 
-//        System.out.println("===팩토리얼 구하기===");
+//        System.out.println("\n=== 팩토리얼 구하기 ===");
 //        System.out.print("숫자를 입력하세요(1~10): ");
 //        int num = scanner.nextInt();
-//
-//        int fact = 1;
-//        for (int i = 1; i <= num; i++) {
-//            fact *= i;
+//        if (num < 1 || num > 10) {
+//            System.out.println("범위를 벗어났습니다.");
+//        } else {
+//            int fact = 1;
+//            for (int i = 1; i <= num; i++) {
+//                fact *= i;
+//            }
+//            System.out.println("팩토리얼: " + fact);
 //        }
-//        System.out.println("팩토리얼: " + fact);
 
         // 1~50 까지 반복 (3,6,9) 박수 출력
         // (5) 으악 출력
+//        for (int i = 1; i <= 50; i++) {
+//            boolean clap = false;
+//            boolean scream = false;
+//
+//            int one = i % 10; // 일의 자리 구하기
+//            int ten = i / 10; // 십의 자리 구하기
+//
+//            // 박수 조건
+//            if (one == 3 || one == 6 || one == 9 || ten == 3 || ten == 6 || ten == 9) {
+//                clap = true;
+//            }
+//
+//            // 으악 조건
+//            if (i % 5 == 0) {
+//                scream = true;
+//            }
+//
+//            if (clap) {
+//                System.out.println("박수");
+//            }
+//            if (scream) {
+//                System.out.println("으악");
+//            }
+//
+//            // 둘 다 아니면 숫자 출력
+//            if (!clap && !scream) {
+//                System.out.println(i);
+//            }
+//        }
 
-        int num3 = 3;
-        int num6 = 6;
-        int num9 = 9;
+        // 위 코드는 33, 36, 39가 되더라도 박수가 한 번만 출력됨
+        // 아래 코드는 33, 36, 39가 되면 박수 두 번!
+
         for (int i = 1; i <= 50; i++) {
-            if (num3 == i) {
-                num3 += 10;
-                System.out.println("박수");
-                continue;
+            boolean clapOne = false;   // 일의 자리 박수 여부
+            boolean clapTen = false;   // 십의 자리 박수 여부
+            boolean scream = false;    // 으악 여부
+
+            int one = i % 10; // 일의 자리 구하기
+            int ten = i / 10; // 십의 자리 구하기
+
+            // 일의 자리 확인
+            if (one == 3 || one == 6 || one == 9) {
+                clapOne = true;
             }
-            if (num6 == i) {
-                num6 += 10;
-                System.out.println("박수");
-                continue;
+
+            // 십의 자리 확인
+            if (ten == 3 || ten == 6 || ten == 9) {
+                clapTen = true;
             }
-            if (num9 == i) {
-                num9 += 10;
-                System.out.println("박수");
-                continue;
-            }
-            if (i >= 30 && i < 40) {
-                System.out.println("박수");
-                continue;
-            }
+
+            // 5의 배수 확인
             if (i % 5 == 0) {
-                System.out.println("으악");
-                continue;
+                scream = true;
             }
-            System.out.println(i);
+
+            // 출력 로직
+            if (clapTen) {
+                System.out.println("박수");
+            }
+            if (clapOne) {
+                System.out.println("박수");
+            }
+            if (scream) {
+                System.out.println("으악");
+            }
+
+            // 아무 조건도 안 걸릴 때만 숫자 출력
+            if (!clapTen && !clapOne && !scream) {
+                System.out.println(i);
+            }
         }
-
-
-
-
 
 
     }

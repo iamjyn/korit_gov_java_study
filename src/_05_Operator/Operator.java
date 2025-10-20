@@ -91,8 +91,8 @@ public class Operator {
         boolean isSame = (x == y) ? true : false;
         System.out.println(isSame);
 
-        String smae = (x != y) ? "다름" : "같음";
-        System.out.println(smae);
+        String same = (x != y) ? "다름" : "같음";
+        System.out.println(same);
 
         System.out.println("=".repeat(30));
 
