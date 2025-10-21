@@ -21,7 +21,7 @@ public class Array02 {
 //        }
 
         // 본인이 좋아하는 음식 5가지 배열에 저장하고
-        // 향상된 for문을 이요해서 출력해보기
+        // 향상된 for문을 이용해서 출력해보기
         // 내가 좋아하는 음식 1번 ***
         String[] foods = {"coffee", "ramen", "icecream", "snack", "juice"};
         int num = 1;

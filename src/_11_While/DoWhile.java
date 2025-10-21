@@ -85,5 +85,6 @@ public class DoWhile {
             }
         } while (inputNum != answer);
 
+        scanner.close();
     }
 }

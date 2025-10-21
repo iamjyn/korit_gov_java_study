@@ -35,20 +35,20 @@ public class Array01 {
 //        String[] countries = new String[] {"Hungary", "Croatia", "Slovenia", "Austria", "Czech"};
 
         // 4) 선언과 동시에 값 나열 (new 생략)
-//        String[] countries = {"Hungary", "Croatia", "Slovenia", "Austria", "Czech"};
+        String[] countries = {"Hungary", "Croatia", "Slovenia", "Austria", "Czech"};
 
         // 배열의 값 변경
-//        countries[2] = "Swiss"; // 값변경
-//        System.out.println(countries[2]);
+        countries[2] = "Swiss"; // 값변경
+        System.out.println(countries[2]);
 
         // 배열의 길이 => 할당된 공간 크기
-//        System.out.println(countries.length);
-//
-//        int[] numbers = {1, 2, 3};
-//        boolean[] booleans = {true, false, true, true};
-//        double[] doubles = {12.3, 15.2, 3.14};
-//        float[] floats = {3.14F, 5.12F, 9.52F};
-//        long[] longs = {100L, 2000L, 30000L};
+        System.out.println(countries.length);
+
+        int[] numbers = {1, 2, 3};
+        boolean[] booleans = {true, false, true, true};
+        double[] doubles = {12.3, 15.2, 3.14};
+        float[] floats = {3.14F, 5.12F, 9.52F};
+        long[] longs = {100L, 2000L, 30000L};
 
     }
 }

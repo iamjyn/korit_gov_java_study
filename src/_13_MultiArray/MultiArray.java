@@ -30,7 +30,7 @@ public class MultiArray {
         // C4 접근
         System.out.println(seats[2][3]);
 
-        // 첫줄에 3칸, 두번째 줄 4칸, 세번째 줄 5칸
+        // 첫줄에 3칸, 두번째 줄 4칸, 세번째 줄 5칸 (가변(Jagged)배열)
         String[][] seats2 = {
                 {"A1", "A2", "A3"},
                 {"B1", "B2", "B3", "B4"},
