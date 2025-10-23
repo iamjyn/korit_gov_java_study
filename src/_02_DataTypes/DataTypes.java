@@ -67,7 +67,7 @@ public class DataTypes {
         char char2 = '나';
         char char3 = '다';
         System.out.println(char1 + char2 + char3); // char(아스키코드로 이루어짐)
-        System.out.println("" + char1 + char2 + char3);
+        System.out.println(char1 + char2 + char3);
 
         // String name = "홍길동";
 
@@ -83,5 +83,10 @@ public class DataTypes {
         // 제 이름은 ***이고, 나이는 **살이며, ***에서 살고 있습니다.
 
         System.out.println("제 이름은 " + name + "이고, 나이는 " + age + "살이며, " + address + "에서 살고 있습니다.");
+
+        char chA = 'A';
+        char chB = 'B';
+        System.out.println(chA);
+        System.out.println(chA + chB);
     }
 }

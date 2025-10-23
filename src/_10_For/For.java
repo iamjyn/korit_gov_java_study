@@ -43,12 +43,12 @@ public class For {
 //        }
 //        System.out.println(sum);
 //
-//        int sum2 = 0;
-//        for (int i = 0; i <= 100; i+= 2) {
-//            sum2 += i;
-//            System.out.println("sum: " + sum2);
-//        }
-//        System.out.println(sum2);
+        int sum2 = 0;
+        for (int i = 0; i <= 100; i+= 2) {
+            sum2 += i;
+            System.out.println("sum: " + sum2);
+        }
+        System.out.println(sum2);
 
         // 구구단 출력하기 (한단만)
         // 특정 단을 입력받아서 1~9단까지

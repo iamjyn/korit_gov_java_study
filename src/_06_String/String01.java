@@ -1,5 +1,8 @@
 package _06_String;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class String01 {
     public static void main(String[] args) {
         String s = "My name is GilDong Hong";
@@ -19,8 +22,6 @@ public class String01 {
         System.out.println(s.lastIndexOf("name")); // 해당 문자열이 없으면 -1 반환
         System.out.println(s.startsWith("I like")); // 해당 문자열로 시작하냐?
         System.out.println(s.endsWith("travel")); // 해당 문자열로 끝나냐?
-
-
 
     }
 }

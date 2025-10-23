@@ -11,9 +11,6 @@ public class Return {
         return age;
     }
 
-
-
-
     public static void main(String[] args) {
         // 반환값
         // void는 반환값이 없다라는 의미

@@ -19,9 +19,5 @@ public class OverloadingEx {
         System.out.println(max(1, 7));
         System.out.println(max(10.9, 7.8));
 
-
-
-
-
     }
 }

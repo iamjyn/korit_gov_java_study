@@ -60,17 +60,14 @@ public class MultiArrayLoop {
 //        imaxSeats[7][5] = "__";
 //        imaxSeats[7][6] = "__";
 //
-//        for (int i = 0; i < imaxSeats.length; i++) {
-//            String eng = String.valueOf((char) ('A' +i));
-//            for (int j = 0; j < imaxSeats[i].length; j++) {
-//                System.out.print(eng + (j + 1) + " ");
-//            }
-//            System.out.println();
-//        }
+        for (int i = 0; i < imaxSeats.length; i++) {
+            String eng = String.valueOf((char) ('A' +i));
+            for (int j = 0; j < imaxSeats[i].length; j++) {
+                System.out.print(eng + (j + 1) + " ");
+            }
+            System.out.println(); // 행마다 줄바꿈
+        }
 
-
-
-        System.out.println();
 
         // 문제1) 다차원 배열 합 구하기
         // 3x3 크기 1부터 홀수 차례대로 넣고 출력해서 확인 후 총합 구하기
