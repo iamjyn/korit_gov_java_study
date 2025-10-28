@@ -2,7 +2,7 @@ package _16_Class.BankAccount;
 
 public class BankAccountMain {
     public static void main(String[] args) {
-        /*
+        /* 실습)
         * BankAccount 클래스에서 속성으로 balance 선언
         * balance(잔액) private로 제한
         * 해당 객체를 생성할 때 balance에 값 주입

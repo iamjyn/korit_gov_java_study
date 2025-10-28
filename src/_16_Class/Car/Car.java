@@ -13,7 +13,6 @@ public class Car {
     public Car() {
     }
 
-
     /*
     * this: 해당 클래스로 만들어진 자기 자신 객체를 의미(참조)
     * this를 왜 써야하는 가?
@@ -53,8 +52,5 @@ public class Car {
         System.out.println("자동차 색상: " + carColor);
 
     }
-
-
-
 
 }
