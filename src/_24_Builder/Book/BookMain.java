@@ -2,13 +2,24 @@ package _24_Builder.Book;
 
 public class BookMain {
     public static void main(String[] args) {
-        Book book = new Book.Builder()
+//        Book book = new Book.Builder()
+//                .bookID(123)
+//                .title("제목")
+//                .author("저자")
+//                .isbn("1234567890")
+//                .build();
+//        System.out.println(book);
+
+        // 롬복 빌더
+        Book book = Book.builder()
                 .bookID(123)
                 .title("제목")
                 .author("저자")
                 .isbn("1234567890")
                 .build();
         System.out.println(book);
+
+
     }
 
 

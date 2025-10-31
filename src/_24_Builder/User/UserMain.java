@@ -4,7 +4,7 @@ public class UserMain {
     public static void main(String[] args) {
         User user = new User.Builder()
                 .userId(123)
-                .password("")
+//                .password("홍길동")
                 .email("123naver.com")
                 .build();
         System.out.println(user);

@@ -15,6 +15,5 @@ public class StaticMemberMain {
         * 3. 가독성 향상
         * 4. 변경 가능성을 최소화
         * */
-
     }
 }

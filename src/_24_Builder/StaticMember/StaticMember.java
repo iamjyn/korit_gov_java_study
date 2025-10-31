@@ -33,5 +33,4 @@ public class StaticMember {
             return new StaticMember(this);
         }
     }
-
 }
