@@ -11,6 +11,5 @@ public class UpperBounded {
         Dog d = box.getValue();
 //        box.setValue(new Dog()); // 불가능
         System.out.println(d);
-
     }
 }

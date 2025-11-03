@@ -47,6 +47,7 @@ public class TodoListView {
                     System.out.println("로그인 후 사용 가능합니다.");
                     continue;
                 }
+                todoListMenuView();
             } else if ("2".equals(cmd) && principal == null) {
                 // 회원가입
                 signupView();

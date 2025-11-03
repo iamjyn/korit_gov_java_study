@@ -49,8 +49,4 @@ public class UserService {
             System.out.println(user);
         }
     }
-
-
-
-
 }

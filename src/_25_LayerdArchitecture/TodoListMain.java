@@ -1,11 +1,8 @@
 package _25_LayerdArchitecture;
 
-import _25_LayerdArchitecture.entity.Todo;
-import _25_LayerdArchitecture.repository.TodoList;
-import _25_LayerdArchitecture.repository.UserList;
-import _25_LayerdArchitecture.service.TodoService;
-import _25_LayerdArchitecture.service.UserService;
-import _25_LayerdArchitecture.view.TodoListView;
+import _25_LayerdArchitecture.repository.*;
+import _25_LayerdArchitecture.service.*;
+import _25_LayerdArchitecture.view.*;
 
 import java.time.LocalDateTime;
 

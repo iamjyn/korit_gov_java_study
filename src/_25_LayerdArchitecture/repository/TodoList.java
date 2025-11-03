@@ -9,10 +9,6 @@ public class TodoList {
         this.todos = new Todo[0];
     }
 
-//    public Todo[] getAllTodo() {
-//        return todos;
-//    }
-
     // todoId 생성
     public int generateTodoId() {
         return todos.length == 0 ? 1 : todos[todos.length - 1].getTodoId() + 1;
@@ -45,7 +41,4 @@ public class TodoList {
         }
         return foundTodos;
     }
-
-
-
 }

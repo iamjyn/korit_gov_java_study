@@ -23,9 +23,4 @@ public class AppConfig {
         }
         return instance;
     }
-
-
-
-
-
 }

@@ -18,7 +18,5 @@ public class Main {
 
         System.out.println(GenericEx.identify(123));
         System.out.println(GenericEx.identify("123"));
-
-
     }
 }
