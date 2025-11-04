@@ -69,12 +69,12 @@ public class StrList {
         // List의 길이: size()
         System.out.println(strList2.size());
 
-//        List<String> strResult = new ArrayList<>();
-//        for (String str : strList2) {
-//            String result = str + "언어";
-//            strResult.add(result);
-//        }
-//        System.out.println(strResult);
+        List<String> strResult = new ArrayList<>();
+        for (String str : strList2) {
+            String result = str + "언어";
+            strResult.add(result);
+        }
+        System.out.println(strResult);
 
 //        List<String> strResult = new ArrayList<>();
 //        for (int i = 0; i < strList2.size(); i++) {
@@ -82,9 +82,5 @@ public class StrList {
 //            strResult.add(result);
 //        }
 //        System.out.println(strResult);
-
-
-
-
     }
 }

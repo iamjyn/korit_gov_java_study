@@ -84,7 +84,5 @@ public class StrMap {
         System.out.println("키 기준 내림차순: " + entryList);
         Collections.sort(entryList, Map.Entry.comparingByValue(Comparator.reverseOrder())); // 값 기준 내림차순 정렬
         System.out.println("값 기준 내림차순: " + entryList);
-
-
     }
 }

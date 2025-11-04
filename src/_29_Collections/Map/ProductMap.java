@@ -79,7 +79,6 @@ public class ProductMap {
         Collections.sort(productList, Map.Entry.comparingByKey(Comparator.reverseOrder())); // 키 기준 내림차순
         System.out.println("내림차순: " + productList);
 
-
     }
 }
 

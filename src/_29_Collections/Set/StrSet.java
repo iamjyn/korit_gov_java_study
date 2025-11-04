@@ -6,7 +6,6 @@ public class StrSet {
     /*
     * List는 순서가 있고 중복을 허용하는 반면에 Set는 순서가 없고, 중복도 허용하지 않는다.
     * List -> Set -> List 형변환이 중요
-    *
     * */
     public static void main(String[] args) {
         Set<String> strSet1 = new HashSet<>();
