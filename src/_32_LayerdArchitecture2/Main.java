@@ -2,6 +2,7 @@ package _32_LayerdArchitecture2;
 
 import _32_LayerdArchitecture2.dto.SigninReqDto;
 import _32_LayerdArchitecture2.dto.SignupReqDto;
+import _32_LayerdArchitecture2.repository.UserRepositoryImpl2;
 import _32_LayerdArchitecture2.service.SigninService;
 import _32_LayerdArchitecture2.service.SigninServiceImpl;
 import _32_LayerdArchitecture2.service.SignupService;
@@ -13,7 +14,6 @@ public class Main {
     public static void main(String[] args) {
         SignupService signupService = SignupService.getInstance();
         SigninService signinService = SigninServiceImpl.getInstance();
-
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -82,10 +82,9 @@ public class Main {
                 }
                 // 유효성 검사 완료 후 signin() 호출
                 signinService.signin(signinReqDto);
-
             } else if ("3".equals(selectMenu)) {
                 System.out.println("[ 가입된 회원 전체 조회 ]");
-
+                System.out.println(UserRepositoryImpl2.getInstance().toString());
             } else {
                 System.out.println("메뉴를 다시 선택해주세요.");
             }
