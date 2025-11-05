@@ -38,7 +38,5 @@ public class StringBuilder01 {
 
         // 문자열 뒤집기
         System.out.println("문자열 뒤집기: " + sb.reverse());
-
-
     }
 }

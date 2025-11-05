@@ -41,6 +41,5 @@ public class StringBuilder02 {
         long endTime3 = System.currentTimeMillis(); // 끝
         long duration3 = endTime3 - startTime3;
         System.out.println("StringBuilder 시간: " + duration3);
-
     }
 }

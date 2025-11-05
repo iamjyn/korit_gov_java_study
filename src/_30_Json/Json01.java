@@ -55,8 +55,5 @@ public class Json01 {
         // Json => JsonObject
         JsonObject jsonObject2 = gson1.fromJson(json2, JsonObject.class);
         System.out.println(jsonObject2);
-
-
-
     }
 }

@@ -30,7 +30,5 @@ public class OrderJson {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(jsonObject);
         System.out.println(json);
-
     }
-
 }

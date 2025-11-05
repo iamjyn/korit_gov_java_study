@@ -49,7 +49,5 @@ public class Json02 {
         // Json => User 클래스의 인스턴스로 바꾸는 방법
         User user2 = gson.fromJson(userJson, User.class);
         System.out.println(user2);
-
-
     }
 }
