@@ -1,6 +1,5 @@
 package _33_Exception;
 
-
 import java.util.Scanner;
 
 public class NumberParseException {

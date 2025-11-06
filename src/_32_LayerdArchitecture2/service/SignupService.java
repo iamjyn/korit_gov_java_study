@@ -44,6 +44,4 @@ public class SignupService {
     public void signup(SignupReqDto signupReqDto) {
         userRepository.insert(signupReqDto.toEntity());
     }
-
-
 }
